@@ -1,13 +1,135 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Mooli&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  min-height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  
 }
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.title{
+  font-size: 3rem;
+  margin: 6vh;
+  border: 7px solid  blueviolet;
+  border-radius: 20px;
+  padding: 1vh 5vw;
+  text-align: center;
+  /* max-width: 320px; */
+}
+.cards{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0px 1vw;
+}
+.card{
+  width: 360px;
+  height: max-content;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.image{
+  width: 360px;
+  height: 400px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.tour-info{
+  margin: 20px 5px;
+}
+.tour-price{
+  color: blueviolet;
+  font-size: 1.3rem;
+}
+.tour-name{
+  font-size: 1.5rem;
+}
+.read-more{
+  color: blueviolet;
+  cursor: pointer;
+}
+.btn-red{
+  
+  
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+ 
+  .btn-red:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  }
+  
+  .btn-red:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+    transition: ease 0.2s;
+  }
+  
+  .btn-red:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  .refresh{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .refresh h2{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: blueviolet;
+  }
+  .btn-white{
+    cursor: pointer;
+    margin: 18px 0 0 0;
+    padding: 10px 80px;
+    border: 1px solid white;
+  }
+  .btn-white:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.2s;
+  }
